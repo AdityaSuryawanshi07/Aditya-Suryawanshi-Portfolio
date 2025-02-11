@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/10423/10423959.png" type="image/x-icon" />
+  <link rel="stylesheet" href="Styles/Style.css">
+     <!-- https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png  Sun Icon if needed -->
+
+    <title>Aditya Suryawanshi</title>   
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- =================================   NAV-BAR Start ========================================= -->
+        
+        <!-- =================================   NAV-BAR END  ========================================= -->
+
+
+        <!-- =================================   Home Start  ========================================= -->
+        <div class="home">
+
+            <nav class="navbar navbar-expand-lg nav">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <span class="logo" style="float: inline-start;">
+                            <img src="https://networkinginfotech.com/Images/head-AD-logo.png" alt="img" >
+                        </span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-sm" id="anker"><span><a href="#home" style="color: gold;">Home</a></span></div>
+                            <div class="col-sm" id="anker"><span><a  href="#about" >About</a></span></div>
+                            <div class="col-sm" id="anker"><span><a href="#certification">Certifications</a></span></div>
+                            <div class="col-sm" id="anker"><span><a href="#contact">Contact</a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="row" id="homecontent">
+                <div class="col-md-6 heading">
+                    <div>
+                        <div>
+                            <h3>Hi there!</h3>
+                        </div>
+                    <div style="font-size: 10px;">
+                        <span><h1><span style="color: white;" >I'am </span>Aditya Suryawanshi</h1></span>
+                    </div>    
+                    <div class="typewriter">
+                        <h1 id="typewriter-text"></h1>
+                    </div>
+                    <script>
+                        const texts = ["Front-End_Developer", "Full-Stack_Developer"]; // Array of texts to type
+                        const typingSpeed = 150; // Speed of typing in milliseconds
+                        const deletingSpeed = 110; // Speed of deleting in milliseconds
+                        const pauseBetweenLoops = 500; // Pause before starting to delete
+                
+                        let textIndex = 0; // Current text index
+                        let charIndex = 0; // Current character index
+                        let isDeleting = false;
+                
+                        function type() {
+                            const h1 = document.getElementById("typewriter-text");
+                            const currentText = texts[textIndex];
+                
+                            if (isDeleting) {
+                                h1.textContent = currentText.substring(0, charIndex--);
+                                if (charIndex < 0) {
+                                    isDeleting = false; // Switch to typing mode
+                                    textIndex = (textIndex + 1) % texts.length; // Move to the next text
+                                    // Add a pause for the margin before typing the next text
+                                    setTimeout(type, pauseBetweenLoops); // Pause before starting to type again
+                                } else {
+                                    setTimeout(type, deletingSpeed);
+                                }
+                            } else {
+                                h1.textContent = currentText.substring(0, charIndex++);
+                                if (charIndex > currentText.length) {
+                                    isDeleting = true; // Switch to deleting mode
+                                    setTimeout(type, pauseBetweenLoops); // Pause before starting to delete
+                                } else {
+                                    setTimeout(type, typingSpeed);
+                                }
+                            }
+                        }
+                
+                        // Start the typing effect
+                        type();
+                    </script>
+                    
+                    <p>Working at Datamatics Business Solutions as a Web-Designer. Passionate about Web-Designing / Front-End Development.</p>
+                    <div class="home-icon d-flex">
+                        <a href="https://github.com/AdityaSuryawanshi07"><img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt=""></a>
+                        <a href="#" ><img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt=""></a>
+                        <a href="https://as.linkedin.com/in/aditya-suryawanshi07"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt=""></a>
+                        <a href="https://replit.com/@AdityaSuryawan9"><img src="https://img.icons8.com/?size=48&id=FnhiFHcPQyOa&format=png" alt=""></a>
+                    </div><br>
+                    <br><a href="#" style="border: 1px solid;">Resume</a>
+                    
+                </div>
+                </div>
+
+                <div class="col-md-6" align="center"> 
+                    <br>
+                    <br>
+                    <div class="mt-4 mb-4"><img class="img-fluid jump" src="https://irp.cdn-website.com/f87b8136/dms3rep/multi/Video+game+developer-bro.svg" width="450px" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- =================================   Home END  ========================================= -->
+
+
+
+        <!-- =================================   About Start  ========================================= -->
+        <!-- <div class=" devider"> </div> -->
+         <div class="about" id="about"> 
+            <h1>About Me</h1><br>
+                <div>
+                    <h4>A Quick Overview of Me:</h4>
+                    <p>I have completed my graduation from Computer Science stream & Also have completed some courses for my growth in IT carrier. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release. Currently, I'm focused on the front-end development. I take into consideration the user experience while writing reusable and efficient code.</p>
+                </div>
+                <hr>
+                <div>
+                    <h4>Experience:</h4>
+                    <p>After completing my Studies and Courses, I joined Datamatics Bussiness Solutions as Web-Designer.</p>
+                    <div class="flex-container">
+                        <img src="https://peoplesync.myadrenalin.com/Themes/DATAMATICS/images/DATAMATICS_YourLogo_Nav.png" class="img-responsive" style="height: 45px;" alt="DBSL Exp">
+                        <span>&nbsp;:- 1 Year (Currently Working).</span>
+                    </div>  
+                </div><br>
+                
+                <div>
+                    <h4>Technologies and Tools</h4>
+                    <p>While Completing my Courses and Working as Web Designer, I have studied much about Front-end Technologies and also about Back-end Technologies :</p>
+
+                    <!-- =================== =================== Cards Start ========================  =========================== -->
+                <div align="center">
+                    <div class="card-container">
+                        <div class="line"></div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                            <div class="description">HTML</div>
+                        </div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS">
+                            <div class="description">CSS</div>
+                        </div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                            <div class="description">Java-Script</div>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="line"></div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap">
+                            <div class="description">Bootstrap</div>
+                        </div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" alt="C-language">
+                            <div class="description">C Programming</div>
+                        </div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="Cplusplus">
+                            <div class="description">C++</div>
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="line"></div>
+                        <div class="card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <div class="description">Java</div>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="SQL">
+                            <div class="description">SQL</div>
+                        </div>
+                    </div>
+                </div>    
+
+                </div>
+         </div>
+        <!-- =================================   About Start  ========================================= --> 
+
+
+        <!-- =================================   Courses Start  ========================================= --> 
+        <!-- <div class=" devider"> </div> -->
+        <div class="courses" id="certification">
+            <h1>Certification</h1>
+            <div class="row d-flex justify-content-around mt-5">
+                <div class="col-md-4 course-box">
+                   <div class="d-flex justify-content-center"><h2>Full-Stack in Java</h2><span><a href="#"><img src="https://shorturl.at/ag032" alt=""></a></span></div>
+                   <p>I am have completed my Full Stack Development program in Java with an 'A' grade certification.This course equipped me with essential skills in HTML, CSS, and Bootstrap for creating responsive user interfaces, as well as JavaScript for dynamic web functionality. On the back end, I gained proficiency in Java and MySQL, allowing me to build scalable applications and manage databases effectively. <a href="https://raw.githubusercontent.com/AdityaSuryawanshi07/Certificates/cee52ba493ad1372619a5ffa7913c42fc89453c4/Java%20Full%20Stack%20Development.pdf">View Certificate</a></p>
+                   <p><strong>Languages:</strong></p>
+                   
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Java-Script</li>
+                            <li>Java</li>
+                            <li>My-SQL</li>
+                        </ul>
+                    </div>
+                
+                </div>
+                   
+                </div>
+
+
+                <div class="col-md-4 course-box mt-1">
+                    <div class="d-flex justify-content-center mt-1"><h2>Web Development</h2><span><a href="#"><img src="https://shorturl.at/xyyRL" alt=""></a></span></div>
+                    <p>I also have completed Web Development course with an 'A' grade. This program equipped me with essential skills in HTML, CSS, JavaScript, Bootstrap, React, PHP, DBMS and SQL. It contains both backend anf frontend technologies.I am eager to apply my knowledge to create dynamic and responsive web applications in future projects. It is online program that I have completed from Internshala Platform. <a href="https://raw.githubusercontent.com/AdityaSuryawanshi07/Certificates/cee52ba493ad1372619a5ffa7913c42fc89453c4/Web%20Development%20Training%20-%20Certificate%20of%20Completion.pdf" data-bcmap-dir="//viewscreen.githubusercontent.com/static/pdf">View Certificate</a></p>
+                    <p><strong>Languages:</strong></p>
+                    
+                 <div class="row">
+                     <div class="col-md-6">
+                         <ul>
+                             <li>HTML</li>
+                             <li>CSS</li>
+                             <li>React</li>
+                         </ul>
+                     </div>
+                     <div class="col-md-6">
+                         <ul>
+                             <li>Java-Script</li>
+                             <li>PHP</li>
+                             <li>My-SQL</li>
+                         </ul>
+                     </div>
+                 
+                 </div>
+                    
+                 </div>
+
+                
+            </div> 
+        </div>
+        <!-- =================================   Courses END  ========================================= --> 
+
+
+        <!-- =================================   Contact Start  ========================================= -->
+        <!-- <div class=" devider"> </div> -->
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-4 contact-box1">
+                    <h3>Contact Me</h3>
+                    <p>Feel free to reach out and share your experience with my portfolio! I'd love to hear your feedback and thoughts on how you liked it.</p>
+                    <ul>
+                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="#fff" viewBox="0 0 479.058 479.058"><path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" data-original="#000000"></path></svg></span>&nbsp; : suryawanshiadi07@gmail.com</li>
+
+                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="#fff" viewBox="0 0 482.6 482.6"><path d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z" data-original="#000000"></path></svg></span>&nbsp; : +91 9359987827.</li>
+
+                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="#fff" viewBox="0 0 368.16 368.16"><path d="M184.08 0c-74.992 0-136 61.008-136 136 0 24.688 11.072 51.24 11.536 52.36 3.576 8.488 10.632 21.672 15.72 29.4l93.248 141.288c3.816 5.792 9.464 9.112 15.496 9.112s11.68-3.32 15.496-9.104l93.256-141.296c5.096-7.728 12.144-20.912 15.72-29.4.464-1.112 11.528-27.664 11.528-52.36 0-74.992-61.008-136-136-136zM293.8 182.152c-3.192 7.608-9.76 19.872-14.328 26.8l-93.256 141.296c-1.84 2.792-2.424 2.792-4.264 0L88.696 208.952c-4.568-6.928-11.136-19.2-14.328-26.808-.136-.328-10.288-24.768-10.288-46.144 0-66.168 53.832-120 120-120s120 53.832 120 120c0 21.408-10.176 45.912-10.28 46.152z" data-original="#000000"></path><path d="M184.08 64.008c-39.704 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z" data-original="#000000"></path></svg></span>&nbsp; : Borivali (West), India.</li>
+                    </ul>
+
+                    <div class="contact-img">
+                    <a href="mailto:suryawanshiadi07@gmail.com"><img src="https://cdn-icons-png.flaticon.com/128/2965/2965306.png" alt=""></a>
+                    <a href="https://www.instagram.com/_adityasuryawanshi/"><img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt=""></a>
+                    <a href="https://github.com/AdityaSuryawanshi07"><img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt=""></a>
+                    <a href="https://as.linkedin.com/in/aditya-suryawanshi07"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt=""></a>
+                    <a href=""><img src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt=""></a>
+                    </div>
+                
+                </div>
+                <div class="col-md-4 contact-box2">
+                    <h3>Get In Touch</h3>
+                    <!-- <p>Your feedback and insights would mean a lot to me. To get in touch with me, you only need to take one more step forward.</p> -->
+                    <form>
+                        
+                        <input type="text" id="name" placeholder="Your Full Name">
+                        <br><br>
+                        <input type="email" id="mail" placeholder="Your Email Address">
+                        <br><br>
+                        <textarea name="message" id="message" placeholder="Write your message here.."></textarea>
+                        <br><br><br><br><br>
+                        
+                        <button class="btn" type="submit">Submit</button> <!-- This button is now last -->
+                    </form>
+                    
+                </div>
+            </div>
+        </div>       
+        <!-- =================================   Contact End  ========================================= -->
+        <button class="scroll-to-top" id="scrollToTopBtn"><img class="scroll" src="https://cdn-icons-png.flaticon.com/512/17735/17735676.png" width="70" alt=""></button>
+
+        <script>
+            // Get the button
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+            // Show the button when scrolling down
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopBtn.style.display = "block"; // Show button
+                } else {
+                    scrollToTopBtn.style.display = "none"; // Hide button
+                }
+            };
+    
+            // Scroll to top function
+            scrollToTopBtn.onclick = function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Smooth scroll
+                });
+            };
+        </script>
+
+        <!-- =================================   Made By Start  ========================================= -->
+        <div class=" devider"> </div>
+        <div class="made row p-4"> 
+            <p> Copyright © 2025-2026 | All rights reserved. Designed by <a target="_blank" style="color: gold;" href="https://as.linkedin.com/in/aditya-suryawanshi07">Aditya Suryawanshi</a>.</p>
+         </div>
+        <!-- =================================   Made By END  ========================================= -->
+        
+    
+    </div>
+</body>
+</html>
